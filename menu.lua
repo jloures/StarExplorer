@@ -3,12 +3,12 @@ local composer = require( "composer" )
 
 local scene = composer.newScene()
 
-local function goToGame()
-    composer.gotoScene( "game" )
+local function gotoGame()
+    composer.gotoScene( "game", { time=800, effect="crossFade" } )
 end
 
 local function gotoHighScores()
-    composer.gotoScene( "highscores" )
+    composer.gotoScene( "highscores", { time=800, effect="crossFade" } )
 end
 
 
